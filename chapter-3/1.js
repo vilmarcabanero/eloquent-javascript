@@ -35,3 +35,28 @@
 
 // hummus(5)
 
+// function wrapValue(n) {
+//   let local = n;
+//   return () => local;
+// }
+
+// let wrap1 = wrapValue(1);
+// let wrap2 = wrapValue(2);
+// console.log(wrap1());
+// // → 1
+// console.log(wrap2());
+// // → 2
+
+// const multiplier = (factor) => {
+//   return number => number * factor
+// }
+
+// let thrice = multiplier(3) //Creates a thrice(number) function
+
+// console.log(thrice(3))
+
+const power = (base, exponent) => {
+  if (exponent === 0) return 1
+  else return base * power(base, exponent - 1)
+}
+
